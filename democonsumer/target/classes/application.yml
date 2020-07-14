@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: redis://127.0.0.1:6379
+    client: curator
+  consumer:
+    timeout: 3000
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379

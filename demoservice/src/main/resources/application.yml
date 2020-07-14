@@ -1,0 +1,15 @@
+dubbo:
+  application:
+    name: provider
+  registry:
+    address: redis://127.0.0.1:6379
+    client: curator
+  protocol:
+#    dubbo为单一长连接协议，传输方式为TCP，传输方法为NIO,具有NIO的优点和缺点
+#    http表单远程调用协议，连接个数为多链接，连接方式为短连接，传输方式为同步
+    name: dubbo
+    port: 20880
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
